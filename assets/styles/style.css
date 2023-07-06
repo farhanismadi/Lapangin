@@ -1,0 +1,770 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+}
+
+/* navbar */
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  padding: 20px 50px;
+  background-color: #1cc759;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav-logo h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  position: relative;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+/* header */
+header {
+  background-color: #1cc759;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  position: relative;
+  border-radius: 0 0 30px 30px;
+}
+
+.header-teks {
+  flex: 1;
+  padding: 0 130px 0 35px;
+  color: #ffffff;
+}
+
+.header-teks h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+
+.header-teks p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.header-download {
+  display: flex;
+  margin-top: 20px;
+}
+
+.header-download a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-download img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.header-download img:hover {
+  width: 202px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-img {
+  width: 50%;
+  object-fit: cover;
+  height: 100vh;
+}
+
+/* pelayanan */
+#pelayanan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 50px;
+  background-color: #f2f2f2;
+}
+
+.pelayanan-teks {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pelayanan-teks h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pelayanan-teks p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pelayanan-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: 10px;
+}
+
+.pelayanan-img img {
+  width: 90%;
+  height: auto;
+}
+
+/* tentang */
+#tentang {
+  display: flex;
+}
+
+.tentang-img {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tentang-teks {
+  flex: 1;
+  max-width: 50%;
+  background-color: #1cc759;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.tentang-teks h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tentang-teks p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.deskripsi {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.deskripsi > div {
+  flex-basis: 50%;
+}
+
+.deskripsi img {
+  margin-right: 20px;
+}
+
+.des-teks {
+  color: #ffffff;
+}
+
+.des-teks h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.des-teks p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tentang-btn {
+  margin-top: 40px;
+}
+
+.tentang-btn a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tentang-btn img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 220px;
+  border-radius: 20px;
+}
+
+.tentang-btn img:hover {
+  width: 221px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* testimoni */
+#testimoni {
+  padding: 50px;
+  text-align: center;
+}
+
+.testi-p {
+  padding: 0 200px;
+}
+
+.semua-ulasan {
+  text-align: left;
+  display: flex;
+  margin-top: 50px;
+}
+
+.ulasan-1,
+.ulasan-2,
+.ulasan-3 {
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  display: flex;
+  margin: 0 50px 20px 0;
+  gap: 2rem;
+}
+
+.ulasan-3 {
+  margin-bottom: 0;
+}
+
+.ulasan .profil {
+  width: 100px;
+  height: 100px;
+  padding: 10px 0 0 0;
+}
+
+.ulasan {
+  flex: 3;
+}
+
+.ulasan h4 {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+
+.ulasan p {
+  margin: 10px 0 10px 0;
+  line-height: 22px;
+}
+
+.ulasan-terbaik {
+  flex: 3;
+  text-align: center;
+  background-color: #1cc759;
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.ulasan-terbaik p {
+  padding: 0 80px;
+  line-height: 30px;
+}
+
+/* footer */
+#footer {
+  padding: 50px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.top-footer {
+  display: flex;
+  gap: 10rem;
+}
+
+.top-footer a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+.top-footer a:hover {
+  color: #1cc759;
+}
+
+.top-footer p {
+  margin: 0 0 10px 0;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icon img:hover {
+  width: 35px;
+}
+
+.footer-1 {
+  flex: 1;
+}
+
+.footer-2 {
+  flex: 1;
+}
+
+.footer-3 {
+  flex: 1;
+}
+
+.footer-4 {
+  flex: 1;
+}
+
+.footer-4 img {
+  border-radius: 10px;
+}
+
+.footer-4 img:hover {
+  width: 195px;
+  box-shadow: 0 4px 8px 0 rgb(64, 64, 64), 0 6px 20px 0 rgba(97, 97, 97, 0.671);
+}
+
+hr {
+  margin: 100px 0 0 0;
+}
+
+.copyright {
+  display: flex;
+  gap: 3rem;
+}
+
+.f-logo img {
+  width: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  /* navbar */
+  nav {
+    padding: 10px 40px;
+  }
+
+  .nav-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .nav-logo h3 {
+    font-size: 16px;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  /* header */
+  header {
+    flex-direction: column;
+    padding: 50px 20px 20px 20px;
+    align-items: center;
+  }
+
+  .header-teks {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .header-download {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .header-download a {
+    margin-right: 10px;
+  }
+
+  .header-download img {
+    width: 150px;
+    height: auto;
+  }
+
+  .header-download img:hover {
+    width: 157px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .header-img {
+    width: 50%;
+    height: auto;
+  }
+
+  /* pelayanan */
+  #pelayanan {
+    flex-direction: column;
+    padding: 50px 50px;
+  }
+
+  .pelayanan-teks {
+    text-align: center;
+  }
+
+  .pelayanan-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  /* tentang */
+  #tentang {
+    flex-direction: column;
+  }
+
+  .tentang-img,
+  .tentang-teks {
+    max-width: 100%;
+  }
+
+  .tentang-teks {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .deskripsi img {
+    width: 10%;
+  }
+
+  .deskripsi > div {
+    flex-basis: 100%;
+  }
+
+  .tentang-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  /* testimoni */
+  .testi-p {
+    padding: 0;
+  }
+
+  .semua-ulasan {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ulasan-1,
+  .ulasan-2,
+  .ulasan-3 {
+    margin-right: 0;
+  }
+
+  .ulasan-terbaik {
+    margin-top: 50px;
+  }
+
+  .ulasan-terbaik p {
+    padding: 0;
+  }
+
+  /* footer */
+  .top-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: flex-start;
+  }
+
+  .footer-icon {
+    justify-content: flex-start;
+  }
+
+  .footer-1,
+  .footer-2,
+  .footer-3,
+  .footer-4 {
+    flex-basis: 50%;
+  }
+
+  .footer-4 {
+    text-align: center;
+  }
+
+  .footer-4 img {
+    width: 150px;
+  }
+
+  hr {
+    margin: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* navbar */
+  .nav-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+  }
+
+  nav ul.open {
+    display: flex;
+    background-color: #1cc759;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .toggle-line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .toggle-line:nth-child(1) {
+    top: 0;
+  }
+
+  .toggle-line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .toggle-line:nth-child(3) {
+    bottom: 0;
+  }
+
+  .nav-open .toggle-line:nth-child(1),
+  .nav-open .toggle-line:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+
+  .nav-open .toggle-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-open .toggle-line:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+
+  /* header */
+  .header-teks {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header-download {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .header-download a {
+    margin-bottom: 10px;
+  }
+
+  .header-download img {
+    width: 150px;
+    height: auto;
+  }
+
+  .header-download img:hover {
+    width: 157px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .header-img {
+    width: 70%;
+    height: auto;
+  }
+
+  /* pelayanan */
+  #pelayanan {
+    flex-direction: column;
+    padding: 30px 50px;
+  }
+
+  .pelayanan-img {
+    grid-template-columns: 1fr;
+  }
+
+  /* tentang */
+  .deskripsi > div {
+    flex-basis: 100%;
+  }
+
+  .deskripsi img {
+    width: 20%;
+  }
+
+  .tentang-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .tentang-btn a {
+    margin-bottom: 10px;
+  }
+
+  /* testimoni */
+  #testimoni {
+    padding: 20px;
+  }
+
+  .testi-p {
+    padding: 0;
+  }
+
+  .semua-ulasan {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ulasan-1,
+  .ulasan-2,
+  .ulasan-3 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .ulasan-terbaik {
+    margin-top: 20px;
+  }
+
+  .ulasan .profil {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* footer */
+  #footer {
+    padding: 20px;
+  }
+
+  .top-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-1,
+  .footer-2,
+  .footer-3,
+  .footer-4 {
+    flex-basis: 100%;
+  }
+
+  .footer-icon {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .footer-4 img {
+    width: 120px;
+  }
+
+  hr {
+    margin: 30px 0;
+  }
+
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .f-logo {
+    text-align: center;
+  }
+
+  .f-logo img {
+    width: 40px;
+  }
+}
